@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -32,7 +33,7 @@ public class Ex3 {
 
             System.out.println(employeeSupplier.get());
         }
-
+        System.out.println("----------------");
 
         List<Employee> eList = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
@@ -43,5 +44,22 @@ public class Ex3 {
         Consumer<List<Employee>> consumer = employees -> {
             employees.forEach(System.out::println);
         };
+        consumer.accept(eList);
+        System.out.println("----------------");
+
+
+        Function<List<Employee>, List<String>> listOfEmployeesFunction = employees -> {
+            List<String> employeeList = new ArrayList<>();
+            for (Employee e : employees) {
+                employeeList.add(e.getName());
+            }
+            return employeeList;
+        };
+        System.out.println(listOfEmployeesFunction.apply(eList));
+        System.out.println("----------------");
+
+
+
+
     }
 }
