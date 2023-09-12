@@ -73,7 +73,7 @@ public class Ex3 {
         Consumer<List<Employee>> writeToFile = emp -> {
             try (FileWriter writer = new FileWriter("employeeList.txt")) {
                 for (Employee employee : emp) {
-                    writer.write("Navn: " + employee.getName() +" - Alder: " + employee.getAge() + "\n");
+                    writer.write("Navn: " + employee.getName() + " - Alder: " + employee.getAge() + "\n");
                 }
             } catch (IOException e) {
                 throw new RuntimeException(e);
