@@ -1,4 +1,4 @@
-Navn: Bertil - Alder: 27
-Navn: John - Alder: 28
-Navn: John - Alder: 39
-Navn: Bertil - Alder: 14
+Navn: John - Alder: 42
+Navn: Alberte - Alder: 30
+Navn: Alberte - Alder: 19
+Navn: Alberte - Alder: 36

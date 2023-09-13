@@ -93,7 +93,8 @@ public class Ex4 {
             return groupByBirthMonth;
         };
         System.out.println("Employees i denne måned: " + groupEmployeesByCurrentMonth.apply(employeeList));
-
+        System.out.println("----------------");
+        
 
     }
 }
