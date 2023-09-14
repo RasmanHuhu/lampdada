@@ -47,6 +47,8 @@ public class Ex2 {
 
         count = 0;
         for (int i = 0; i < a.length; i++) {
+
+            //løber array igenne, tester dem for true, og returerer i, som er dem som er true
             if (ex.validate(a[i])) {
 
                 result[count] = a[i];
